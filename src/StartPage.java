@@ -47,7 +47,7 @@ public class StartPage extends Application {
         GridPane.setConstraints(loginButton, 1, 2);
 
         loginButton.setOnAction(e -> {
-            printInfo(nameInput, passInput);
+            login(nameInput, passInput);
         });
 
         grid.getChildren().addAll(nameLabel, nameInput, passLabel, passInput, loginButton);
@@ -58,7 +58,7 @@ public class StartPage extends Application {
         window.show();
     }
 
-    private void printInfo(TextField nameInput, TextField passInput) {
+    private void login(TextField nameInput, TextField passInput) {
         System.out.println("Username: "  + nameInput.getText());
         System.out.println("Password: " + passInput.getText());
     }
