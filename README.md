@@ -14,4 +14,4 @@ Bulletin is a collaborative calendar app that allows users to add multiple peopl
 
 ## More Information:
 - Bulletin is built using JavaFX 15.0.1
-- Built by the Dream Team
+- Built by Ian Wood, Jasmine To, and Courtney Phillips
