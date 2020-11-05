@@ -47,8 +47,7 @@ public class StartPage extends Application {
         GridPane.setConstraints(loginButton, 1, 2);
 
         loginButton.setOnAction(e -> {
-            isInt(nameInput, nameInput.getText());
-            System.out.println("Password: " + passInput.getText());
+            printInfo(nameInput, passInput);
         });
 
         grid.getChildren().addAll(nameLabel, nameInput, passLabel, passInput, loginButton);
@@ -59,14 +58,8 @@ public class StartPage extends Application {
         window.show();
     }
 
-    private boolean isInt(TextField input, String text) {
-        try {
-            int number = Integer.parseInt(input.getText());
-            System.out.println("That's a number, not a name, silly.");
-            return true;
-        } catch(NumberFormatException e) {
-            System.out.println("Username: " + text);
-            return false;
-        }
+    private void printInfo(TextField nameInput, TextField passInput) {
+        System.out.println("Username: "  + nameInput.getText());
+        System.out.println("Password: " + passInput.getText());
     }
 }
