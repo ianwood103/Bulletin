@@ -61,5 +61,6 @@ public class StartPage extends Application {
     private void login(TextField nameInput, TextField passInput) {
         System.out.println("Username: "  + nameInput.getText());
         System.out.println("Password: " + passInput.getText());
+        HomePage.display(nameInput.getText(), passInput.getText());
     }
 }
