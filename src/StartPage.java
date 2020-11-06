@@ -17,7 +17,7 @@ public class StartPage extends Application {
 
     public void start(Stage primaryStage) {
         window = primaryStage;
-        window.setTitle("GridPane Example");
+        window.setTitle("Login Page");
 
         GridPane grid  = new GridPane();
         grid.setPadding(new Insets(10, 10, 10, 10));
