@@ -1,3 +1,5 @@
+package Bulletin;
+
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -18,6 +20,7 @@ public class HomePage {
 
         Scene scene = new Scene(layout);
         window.setScene(scene);
+        System.out.println(username + password);
         window.showAndWait();
         return true;
     }
