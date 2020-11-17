@@ -18,6 +18,7 @@ public class StartPageController {
 
         Parent homePage = FXMLLoader.load(getClass().getResource("HomePage.fxml"));
         Stage window = (Stage) ap.getScene().getWindow();
-        window.setScene(new Scene(homePage, window.getWidth(), window.getHeight()));
+        Scene scene = new Scene(homePage, window.getWidth(), window.getHeight());
+        window.setScene(scene);
     }
 }
