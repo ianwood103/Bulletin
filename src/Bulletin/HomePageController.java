@@ -33,7 +33,7 @@ public class HomePageController {
 
         JSONParser jsonParser = new JSONParser();
 
-        try (FileReader reader = new FileReader("DefaultUser/calendar-list.json")) {
+        try (FileReader reader = new FileReader("src/DefaultUser/calendar-list.json")) {
 
             //Read JSON file
             JSONArray calendarList = (JSONArray) jsonParser.parse(reader);
