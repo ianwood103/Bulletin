@@ -21,7 +21,7 @@ public class CalendarButton {
     }
 
     public Button getButton() throws Exception{
-        calendarButton = (Button) FXMLLoader.load(getClass().getResource("CalendarButton.fxml"));;
+        calendarButton = (Button) FXMLLoader.load(getClass().getResource("CalendarButton.fxml"));
         return calendarButton;
     }
 
