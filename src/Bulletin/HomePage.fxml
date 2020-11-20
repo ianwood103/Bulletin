@@ -32,26 +32,11 @@
                         <HBox layoutX="-1.0" layoutY="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
                               <VBox alignment="TOP_CENTER" spacing="50.0" HBox.hgrow="ALWAYS">
-                                 <children>
-                                    <Button minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="1">
-                                       <VBox.margin>
-                                          <Insets />
-                                       </VBox.margin>
-                                    </Button>
-                                    <Button layoutX="132.0" layoutY="10.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="3" />
-                                 </children>
                                  <HBox.margin>
                                     <Insets top="20.0" />
                                  </HBox.margin>
                               </VBox>
                               <VBox fx:id="leftSide" alignment="TOP_CENTER" spacing="50.0" HBox.hgrow="ALWAYS">
-                                 <children>
-                                    <Button minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="2">
-                                       <VBox.margin>
-                                          <Insets />
-                                       </VBox.margin>
-                                    </Button>
-                                 </children>
                                  <HBox.margin>
                                     <Insets top="20.0" />
                                  </HBox.margin>
