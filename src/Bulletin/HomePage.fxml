@@ -31,7 +31,7 @@
                      <children>
                         <HBox layoutX="-1.0" layoutY="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
-                              <VBox alignment="TOP_CENTER" spacing="50.0" HBox.hgrow="ALWAYS">
+                              <VBox fx:id="rightSide" alignment="TOP_CENTER" spacing="50.0" HBox.hgrow="ALWAYS">
                                  <HBox.margin>
                                     <Insets top="20.0" />
                                  </HBox.margin>
