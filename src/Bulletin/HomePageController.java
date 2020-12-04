@@ -1,11 +1,13 @@
 package Bulletin;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
+
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+import javafx.scene.Scene;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -20,6 +22,7 @@ public class HomePageController {
     public VBox leftSide;
     public VBox rightSide;
     public AnchorPane ap;
+    public Button newButton;
 
     //This function is automatically called when HomePage.fxml gets loaded
     public void initialize() throws Exception {
@@ -74,5 +77,13 @@ public class HomePageController {
             //Prints out any errors, but the program will still continue running if errors are thrown
             e.printStackTrace();
         }
+    }
+
+    public void newButtonClick() throws Exception {
+        Stage window  = (Stage) ap.getScene().getWindow();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("NewCalendarPage.fxml"));
+        Parent root = loader.load();
+
+        window.setScene(new Scene(root));
     }
 }
