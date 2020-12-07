@@ -1,6 +1,5 @@
 package Bulletin;
 
-
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
