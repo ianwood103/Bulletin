@@ -20,7 +20,8 @@ public class CalendarButtonController {
 
         //Safely attempts to set the image to the specified class path
         try {
-            image.setImage(new Image("DefaultUser/" + imagePath));
+            Image loadedImage = new Image("file:DefaultUser/" + imagePath);
+            image.setImage(loadedImage);
         } catch (Exception e) {
             //Prints any errors, but the program continues to run
             e.printStackTrace();

@@ -33,7 +33,7 @@ public class NewCalendarPageController {
     public void submitButtonClick() throws IOException, ParseException, InterruptedException {
 
         //Creates a new directory for the new calendar that the user wants to create
-        File file = new File("src/DefaultUser/" + nameField.getText() + "/");
+        File file = new File("DefaultUser/" + nameField.getText() + "/");
         file.mkdir();
 
         //Creates a new file name with logo as the name, but keeping the extension the same
@@ -54,7 +54,7 @@ public class NewCalendarPageController {
 
         //Parses existing list of calendars and stores that information in calendarList JSONArray
         JSONParser parser = new JSONParser();
-        FileReader reader = new FileReader("src/DefaultUser/calendar-list.json");
+        FileReader reader = new FileReader("DefaultUser/calendar-list.json");
         JSONArray calendarList = (JSONArray) parser.parse(reader);
 
         //Creates a new JSONObject to hold the information for the new calendar
@@ -66,7 +66,7 @@ public class NewCalendarPageController {
         calendarList.add(newCalendar);
 
         //Updates the calendar-list.json file to hold information for new calendar
-        FileWriter calendarFile = new FileWriter("src/DefaultUser/calendar-list.json");
+        FileWriter calendarFile = new FileWriter("DefaultUser/calendar-list.json");
         calendarFile.write(calendarList.toJSONString());
 
         //Closes the updated calendar-list.json file

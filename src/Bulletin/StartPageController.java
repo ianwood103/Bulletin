@@ -18,8 +18,8 @@ public class StartPageController {
     public void login() throws Exception {
 
         //Prints out the entered username and password for testing purposes
-        System.out.println("Username: "  + nameInput.getText());
-        System.out.println("Password: " + passInput.getText());
+        //System.out.println("Username: "  + nameInput.getText());
+        //System.out.println("Password: " + passInput.getText());
 
         //Loads the layout from HomePage.fxml into homePage
         Parent homePage = FXMLLoader.load(getClass().getResource("HomePage.fxml"));

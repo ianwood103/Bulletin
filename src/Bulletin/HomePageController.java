@@ -37,7 +37,7 @@ public class HomePageController {
         CalendarButtonController tempController;
 
         //Reads calendar-list.json into reader variable, while accounting for possible errors
-        try (FileReader reader = new FileReader("src/DefaultUser/calendar-list.json")) {
+        try (FileReader reader = new FileReader("DefaultUser/calendar-list.json")) {
 
             //Parses data from calendar-list.json into a JSONArray
             JSONArray calendarList = (JSONArray) jsonParser.parse(reader);
