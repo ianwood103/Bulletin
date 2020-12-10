@@ -1,4 +1,4 @@
-package Bulletin;
+package Bulletin.NewCalendar;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -13,11 +13,10 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-import java.awt.*;
 import java.io.*;
 import java.nio.file.Files;
 
-public class NewCalendarPageController {
+public class NewCalendarController {
     public TextField nameField;
     public Button submitButton;
     public AnchorPane ap;
@@ -73,8 +72,8 @@ public class NewCalendarPageController {
         calendarFile.flush();
         calendarFile.close();
 
-        //Loads layout from HomePage.fxml into root
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("HomePage.fxml"));
+        //Loads layout from Home.fxml into root
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../Home/Home.fxml"));
         Parent root = loader.load();
 
         //Gets stage from the outside AnchorPane

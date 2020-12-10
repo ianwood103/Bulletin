@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bulletin.StartPageController">
+<AnchorPane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@Start.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bulletin.Start.StartController">
    <children>
       <GridPane alignment="CENTER" layoutX="91.0" layoutY="63.0" prefHeight="274.0" prefWidth="418.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <columnConstraints>
@@ -29,7 +29,7 @@
             <RowConstraints maxHeight="302.0" minHeight="10.0" prefHeight="53.0" vgrow="NEVER" />
         </rowConstraints>
          <children>
-            <Label prefHeight="17.0" prefWidth="55.0" text="Username" />
+            <Label prefHeight="17.0" prefWidth="64.0" text="Username" />
             <TextField fx:id="nameInput" style="-fx-border-color: #4A7FE3; -fx-background-insets: 0; -fx-border-radius: 20; -fx-background-color: #FFFFFF;" GridPane.rowIndex="1" />
             <Label alignment="CENTER" text="Password" GridPane.rowIndex="2" />
             <PasswordField fx:id="passInput" style="-fx-border-color: #4A7FE3; -fx-background-insets: 0; -fx-border-radius: 20; -fx-background-color: #FFFFFF;" GridPane.rowIndex="3" />

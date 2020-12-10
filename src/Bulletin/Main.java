@@ -6,7 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class StartPage extends Application {
+public class Main extends Application {
 
     Stage window;
 
@@ -17,8 +17,8 @@ public class StartPage extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
 
-        //Loads StartPage.fxml layout into root
-        Parent root = FXMLLoader.load(getClass().getResource("StartPage.fxml"));
+        //Loads Start.fxml layout into root
+        Parent root = FXMLLoader.load(getClass().getResource("Start/Start.fxml"));
         window = primaryStage;
 
         //Sets title of application window to be Bulletin

@@ -1,4 +1,4 @@
-package Bulletin;
+package Bulletin.CalendarButton;
 
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;

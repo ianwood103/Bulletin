@@ -1,5 +1,6 @@
-package Bulletin;
+package Bulletin.Home;
 
+import Bulletin.CalendarButton.CalendarButtonController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
@@ -13,8 +14,8 @@ import org.json.simple.parser.JSONParser;
 
 import java.io.FileReader;
 
-//Controller class for HomePage.fxml
-public class HomePageController {
+//Controller class for Home.fxml
+public class HomeController {
 
     //Declares variables for the outer anchorpane
     // Also declares the right and left sides of scrollview that contains the calendar buttons
@@ -23,7 +24,7 @@ public class HomePageController {
     public AnchorPane ap;
     public Button newButton;
 
-    //This function is automatically called when HomePage.fxml gets loaded
+    //This function is automatically called when Home.fxml gets loaded
     public void initialize() throws Exception {
 
         //Creates a new JSONParser to parse json data
@@ -55,7 +56,7 @@ public class HomePageController {
                 loader = new FXMLLoader();
 
                 //A temporary button is loaded into tempButton variable from the CalendarButton.fxml file
-                tempButton = (Button) loader.load(getClass().getResource("CalendarButton.fxml").openStream());
+                tempButton = (Button) loader.load(getClass().getResource("../CalendarButton/CalendarButton.fxml").openStream());
 
                 //Stores the controller for this specific button in the tempController
                 tempController = loader.getController();
@@ -80,7 +81,7 @@ public class HomePageController {
 
     public void newButtonClick() throws Exception {
         Stage window  = (Stage) ap.getScene().getWindow();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("NewCalendarPage.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../NewCalendar/NewCalendar.fxml"));
         Parent root = loader.load();
 
         window.setScene(new Scene(root));
