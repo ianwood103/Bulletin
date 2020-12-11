@@ -20,6 +20,7 @@ public class HomeController {
     //Declares variables for the outer anchorpane
     // Also declares the right and left sides of scrollview that contains the calendar buttons
     public VBox leftSide;
+    public VBox middleSide;
     public VBox rightSide;
     public AnchorPane ap;
     public Button newButton;
@@ -65,10 +66,12 @@ public class HomeController {
                 tempController.fillData((String) buttonObj.get("name"), (String) buttonObj.get("image"));
 
                 //Determines if the button should be added to the left or right side of the window
-                if (count % 2 == 0) {
-                    rightSide.getChildren().add(tempButton);
-                } else {
+                if (count % 3 == 0) {
                     leftSide.getChildren().add(tempButton);
+                } else if (count % 3 == 1) {
+                    middleSide.getChildren().add(tempButton);
+                } else {
+                    rightSide.getChildren().add(tempButton);
                 }
                 count++;
             }
