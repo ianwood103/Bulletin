@@ -17,14 +17,19 @@
 }
 
 #menu-bar {
+    -fx-background-color: #648EDE;
+    -fx-border-color: #648EDE;
+}
+
+#menu-pane {
     -fx-background-color: #4A7FE3;
-    -fx-border-color: #4A7FE3;
+    -fx-opacity: 0;
 }
 
 #new-button {
     -fx-border-radius: 100%;
     -fx-background-radius: 100%;
-    -fx-background-color: #4A7FE3;
+    -fx-background-color: black;
     -fx-text-fill: white;
     -fx-cursor: hand;
 }
@@ -37,5 +42,6 @@
 .calendar-button {
     -fx-background-color: #EBEAEA;
     -fx-border-width: 3px;
-    -fx-border-color: white;
+    -fx-border-color: #7683a0;
+    -fx-cursor: hand;
 }

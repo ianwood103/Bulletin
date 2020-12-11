@@ -15,23 +15,23 @@
          <center>
             <ScrollPane fitToWidth="true" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
               <content>
-                <AnchorPane id="background">
+                <AnchorPane>
                      <children>
                         <HBox layoutX="-1.0" layoutY="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
                               <VBox fx:id="leftSide" alignment="TOP_CENTER" spacing="50.0" HBox.hgrow="ALWAYS">
                                  <HBox.margin>
-                                    <Insets top="20.0" />
+                                    <Insets bottom="20.0" top="20.0" />
                                  </HBox.margin>
                               </VBox>
                               <VBox fx:id="middleSide" alignment="TOP_CENTER" spacing="50.0" HBox.hgrow="ALWAYS">
                                  <HBox.margin>
-                                    <Insets top="20.0" />
+                                    <Insets bottom="20.0" top="20.0" />
                                  </HBox.margin>
                               </VBox>
                               <VBox fx:id="rightSide" alignment="TOP_CENTER" layoutX="10.0" layoutY="30.0" spacing="50.0" HBox.hgrow="ALWAYS">
                                  <HBox.margin>
-                                    <Insets top="20.0" />
+                                    <Insets bottom="20.0" top="20.0" />
                                  </HBox.margin>
                               </VBox>
                            </children>
@@ -44,7 +44,7 @@
          <top>
             <HBox id="menu-bar" alignment="CENTER" BorderPane.alignment="CENTER">
                <children>
-                  <Button id="menu-button" graphicTextGap="0.0" mnemonicParsing="false" textAlignment="CENTER">
+                  <Button id="menu-button" graphicTextGap="0.0" mnemonicParsing="false" onAction="#openMenu" textAlignment="CENTER">
                      <graphic>
                         <ImageView fitHeight="50.0" fitWidth="50.0">
                            <image>
@@ -91,5 +91,21 @@
             </HBox>
          </bottom>
       </BorderPane>
+      <AnchorPane id="menu-pane" fx:id="menuPane" maxWidth="300.0" minWidth="100.0" prefHeight="200.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button id="menu-button" graphicTextGap="0.0" mnemonicParsing="false" onAction="#closeMenu" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0">
+                     <image>
+                        <Image url="@icon.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets top="-1.0" />
+               </padding>
+            </Button>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

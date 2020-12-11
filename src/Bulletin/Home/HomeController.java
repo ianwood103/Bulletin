@@ -17,16 +17,18 @@ import java.io.FileReader;
 //Controller class for Home.fxml
 public class HomeController {
 
-    //Declares variables for the outer anchorpane
+    //Declares variables for the outer AnchorPane
     // Also declares the right and left sides of scrollview that contains the calendar buttons
     public VBox leftSide;
     public VBox middleSide;
     public VBox rightSide;
     public AnchorPane ap;
     public Button newButton;
+    public AnchorPane menuPane;
 
     //This function is automatically called when Home.fxml gets loaded
     public void initialize() throws Exception {
+        menuPane.toBack();
 
         //Creates a new JSONParser to parse json data
         JSONParser jsonParser = new JSONParser();
@@ -87,6 +89,16 @@ public class HomeController {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("../NewCalendar/NewCalendar.fxml"));
         Parent root = loader.load();
 
-        window.setScene(new Scene(root));
+        window.setScene(new Scene(root, window.getWidth(), window.getHeight()));
+    }
+
+    public void openMenu() {
+        menuPane.toFront();
+        menuPane.setStyle("-fx-opacity: 1");
+    }
+
+    public void closeMenu() {
+        menuPane.toBack();
+        menuPane.setStyle("-fx-opacity: 0");
     }
 }
