@@ -31,7 +31,18 @@
                     </font>
                 </Label>
                 <PasswordField fx:id="passInput" maxHeight="50.0" maxWidth="250.0" prefHeight="50.0" prefWidth="250.0" />
+            <Button mnemonicParsing="false" onAction="#login" text="Submit">
+               <font>
+                  <Font name="Helvetica Neue" size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="35.0" />
+               </VBox.margin>
+            </Button>
             </children>
+         <padding>
+            <Insets top="70.0" />
+         </padding>
         </VBox>
         <VBox id="outer-box" fx:id="outerBox" alignment="CENTER" spacing="48.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <children>
