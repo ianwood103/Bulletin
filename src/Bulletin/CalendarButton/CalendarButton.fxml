@@ -9,7 +9,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<Button fx:id="button" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="200.0" prefWidth="200.0" stylesheets="@CalendarButton.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bulletin.CalendarButton.CalendarButtonController">
+<Button fx:id="button" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="200.0" prefWidth="200.0" styleClass="calendar-button" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bulletin.CalendarButton.CalendarButtonController">
    <graphic>
       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
          <children>
