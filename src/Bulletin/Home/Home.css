@@ -1,0 +1,35 @@
+#menu-button {
+    -fx-background-color: #4A7FE3;
+    -fx-border-width: 0;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-cursor: hand;
+}
+
+#profile-button {
+    -fx-background-radius: 100%;
+    -fx-border-radius: 100%;
+    -fx-background-color: black;
+    -fx-border-color: #c3cfe5;
+    -fx-border-width: 3px;
+    -fx-border-insets: -1;
+    -fx-cursor: hand;
+}
+
+#menu-bar {
+    -fx-background-color: #4A7FE3;
+    -fx-border-color: #4A7FE3;
+}
+
+#new-button {
+    -fx-border-radius: 100%;
+    -fx-background-radius: 100%;
+    -fx-background-color: #4A7FE3;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+#background {
+    -fx-background-image: url("../Start/background.jpg");
+    -fx-background-size: 100% 100%;
+}
