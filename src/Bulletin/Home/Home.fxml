@@ -60,7 +60,7 @@
                      </padding>
                   </Button>
                   <Region HBox.hgrow="ALWAYS" />
-                  <Button id="profile-button" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0">
+                  <Button id="profile-button" mnemonicParsing="false" onAction="#openProfile" prefHeight="35.0" prefWidth="35.0">
                      <HBox.margin>
                         <Insets right="10.0" />
                      </HBox.margin>

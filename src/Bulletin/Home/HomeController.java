@@ -1,6 +1,7 @@
 package Bulletin.Home;
 
 import Bulletin.CalendarButton.CalendarButtonController;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
@@ -28,6 +29,7 @@ public class HomeController {
 
     //This function is automatically called when Home.fxml gets loaded
     public void initialize() throws Exception {
+
         menuPane.toBack();
 
         //Creates a new JSONParser to parse json data
@@ -85,7 +87,7 @@ public class HomeController {
     }
 
     public void newButtonClick() throws Exception {
-        Stage window  = (Stage) ap.getScene().getWindow();
+        Stage window = (Stage) ap.getScene().getWindow();
         FXMLLoader loader = new FXMLLoader(getClass().getResource("../NewCalendar/NewCalendar.fxml"));
         Parent root = loader.load();
 
@@ -100,5 +102,14 @@ public class HomeController {
     public void closeMenu() {
         menuPane.toBack();
         menuPane.setStyle("-fx-opacity: 0");
+    }
+
+    public void openProfile() throws Exception {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../Profile/Profile.fxml"));
+        Parent root = loader.load();
+        Stage window = (Stage) ap.getScene().getWindow();
+
+        Scene scene = new Scene(root, window.getWidth(), window.getHeight());
+        window.setScene(scene);
     }
 }

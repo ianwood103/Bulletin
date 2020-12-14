@@ -80,6 +80,6 @@ public class NewCalendarController {
         Stage window = (Stage) ap.getScene().getWindow();
 
         //Changes the scene back to the homepage with the newly created calendar showing
-        window.setScene(new Scene(root));
+        window.setScene(new Scene(root, window.getWidth(), window.getHeight()));
     }
 }
