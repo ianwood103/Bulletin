@@ -69,20 +69,17 @@
             </HBox>
          </top>
       </BorderPane>
-      <BorderPane AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="30.0">
+      <BorderPane AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="40.0">
          <bottom>
             <HBox nodeOrientation="RIGHT_TO_LEFT" BorderPane.alignment="CENTER">
                <children>
-                  <Button id="new-button" fx:id="newButton" alignment="CENTER" mnemonicParsing="false" onAction="#newButtonClick" prefHeight="50.0" prefWidth="50.0" text="+">
+                  <Button id="new-button" fx:id="newButton" alignment="CENTER" contentDisplay="TEXT_ONLY" mnemonicParsing="false" onAction="#newButtonClick" prefHeight="50.0" prefWidth="50.0" text="+" textAlignment="CENTER">
                      <HBox.margin>
                         <Insets />
                      </HBox.margin>
                      <font>
-                        <Font size="37.0" />
+                        <Font size="30.0" />
                      </font>
-                     <padding>
-                        <Insets bottom="1.0" left="-1.0" right="1.0" top="-1.0" />
-                     </padding>
                   </Button>
                </children>
                <BorderPane.margin>

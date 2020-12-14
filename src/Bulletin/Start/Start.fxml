@@ -31,7 +31,7 @@
                     </font>
                 </Label>
                 <PasswordField fx:id="passInput" maxHeight="50.0" maxWidth="250.0" prefHeight="50.0" prefWidth="250.0" />
-            <Button mnemonicParsing="false" onAction="#login" text="Submit">
+            <Button mnemonicParsing="false" onAction="#login" prefHeight="40.0" prefWidth="100.0" text="Submit">
                <font>
                   <Font name="Helvetica Neue" size="13.0" />
                </font>
@@ -58,7 +58,7 @@
                 </Button>
             </children>
             <padding>
-                <Insets top="23.0" />
+                <Insets top="15.0" />
             </padding>
         </VBox>
     </children>
