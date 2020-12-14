@@ -1,3 +1,7 @@
+.root {
+    -fx-background-color: white;
+}
+
 #menu-button {
     -fx-background-color: #4A7FE3;
     -fx-border-width: 0;
@@ -42,6 +46,7 @@
 .calendar-button {
     -fx-background-color: #EBEAEA;
     -fx-border-width: 3px;
-    -fx-border-color: #7683a0;
+    -fx-border-color: transparent;
     -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, black, 10, 0, 5, 5);
 }

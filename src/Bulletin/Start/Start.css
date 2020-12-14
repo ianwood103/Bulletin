@@ -34,3 +34,22 @@
 #inner-box {
     -fx-opacity: 0;
 }
+
+#middle-box {
+    -fx-opacity: 0;
+}
+
+.info-field {
+    -fx-pref-height: 40;
+    -fx-max-width: 250;
+}
+
+#exit-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-cursor: pointer;
+}
+
+#exit-pane {
+    -fx-opacity: 0;
+}
