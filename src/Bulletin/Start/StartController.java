@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
@@ -26,6 +27,7 @@ public class StartController {
     public AnchorPane ap;
     public BorderPane exitPane;
     public Button exitButton;
+    public Label header;
 
     public void login() throws Exception {
 
@@ -60,6 +62,7 @@ public class StartController {
             }
         });
         exitButton.setStyle("-fx-cursor: hand");
+        header.setStyle("-fx-opacity: 0");
     }
 
     public void createAccountClick() {
@@ -77,6 +80,7 @@ public class StartController {
             }
         });
         exitButton.setStyle("-fx-cursor: hand");
+        header.setStyle("-fx-opacity: 0");
     }
 
     public void exitClick() throws Exception {

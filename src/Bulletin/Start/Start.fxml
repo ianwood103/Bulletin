@@ -15,7 +15,7 @@
          <top>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <Label text="Bulletin" textAlignment="CENTER">
+                  <Label fx:id="header" text="Bulletin" textAlignment="CENTER">
                      <font>
                         <Font name="Avenir Light" size="96.0" />
                      </font>
