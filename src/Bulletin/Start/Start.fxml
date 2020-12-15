@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="background" fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" stylesheets="@Start.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bulletin.Start.StartController">
+    <children>
+        <VBox id="inner-box" fx:id="innerBox" alignment="CENTER" spacing="4.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label text="Username">
+                    <VBox.margin>
+                        <Insets right="135.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="nameInput" maxHeight="50.0" maxWidth="250.0" prefHeight="50.0" prefWidth="250.0" />
+                <Label text="Password">
+                    <VBox.margin>
+                        <Insets right="135.0" top="20.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font name="Helvetica Neue" size="16.0" />
+                    </font>
+                </Label>
+                <PasswordField fx:id="passInput" maxHeight="50.0" maxWidth="250.0" prefHeight="50.0" prefWidth="250.0" />
+            <Button mnemonicParsing="false" onAction="#login" prefHeight="40.0" prefWidth="100.0" text="Submit">
+               <font>
+                  <Font name="Helvetica Neue" size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="35.0" />
+               </VBox.margin>
+            </Button>
+            </children>
+         <padding>
+            <Insets top="70.0" />
+         </padding>
+        </VBox>
+      <VBox id="middle-box" fx:id="middleBox" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="300.0" text="Create an Account">
+               <font>
+                  <Font name="Helvetica Neue" size="22.0" />
+               </font>
+            </Button>
+            <TextField styleClass="info-field" />
+            <TextField styleClass="info-field" />
+            <TextField styleClass="info-field" />
+            <TextField styleClass="info-field" />
+            <TextField styleClass="info-field" />
+            <TextField styleClass="info-field" />
+            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="300.0" text="Done">
+               <font>
+                  <Font name="Helvetica Neue" size="22.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+        <VBox id="outer-box" fx:id="outerBox" alignment="CENTER" spacing="48.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#loginClick" prefHeight="50.0" prefWidth="250.0" text="Log In">
+                    <font>
+                        <Font name="Helvetica Neue" size="19.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="50.0" maxWidth="250.0" mnemonicParsing="false" onAction="#createAccountClick" prefHeight="50.0" prefWidth="250.0" text="Create Account">
+                    <font>
+                        <Font name="Helvetica Neue" size="19.0" />
+                    </font>
+                </Button>
+            </children>
+            <padding>
+                <Insets top="15.0" />
+            </padding>
+        </VBox>
+      <BorderPane id="exit-pane" fx:id="exitPane" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <top>
+            <Button id="exit-button" fx:id="exitButton" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" mnemonicParsing="false" text="X" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Button>
+         </top>
+      </BorderPane>
+    </children>
+</AnchorPane>

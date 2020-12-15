@@ -1,0 +1,25 @@
+#background-pane {
+    -fx-background-color: #648EDE;
+    -fx-border-width: 0px 0px 5px 0px;
+    -fx-border-color: #4A7FE3;
+    -fx-min-height: 200;
+    -fx-pref-height: 300;
+}
+
+#profile-picture {
+    -fx-background-color: black;
+    -fx-border-color: white;
+    -fx-border-radius: 100%;
+    -fx-border-width: 3px;
+    -fx-background-radius: 50%;
+    -fx-max-width: 250;
+    -fx-pref-width: 250;
+    -fx-pref-height: 250;
+}
+
+#exit-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 17pt;
+    -fx-cursor: hand;
+}

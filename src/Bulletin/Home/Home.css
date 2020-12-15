@@ -1,0 +1,52 @@
+.root {
+    -fx-background-color: white;
+}
+
+#menu-button {
+    -fx-background-color: #4A7FE3;
+    -fx-border-width: 0;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-cursor: hand;
+}
+
+#profile-button {
+    -fx-background-radius: 100%;
+    -fx-border-radius: 100%;
+    -fx-background-color: black;
+    -fx-border-color: #c3cfe5;
+    -fx-border-width: 3px;
+    -fx-border-insets: -1;
+    -fx-cursor: hand;
+}
+
+#menu-bar {
+    -fx-background-color: #648EDE;
+    -fx-border-color: #648EDE;
+}
+
+#menu-pane {
+    -fx-background-color: #4A7FE3;
+    -fx-opacity: 0;
+}
+
+#new-button {
+    -fx-border-radius: 100%;
+    -fx-background-radius: 100%;
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+#background {
+    -fx-background-image: url("../Start/background.jpg");
+    -fx-background-size: 100% 100%;
+}
+
+.calendar-button {
+    -fx-background-color: #EBEAEA;
+    -fx-border-width: 3px;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, black, 10, 0, 5, 5);
+}

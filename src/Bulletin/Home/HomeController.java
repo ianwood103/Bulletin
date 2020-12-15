@@ -1,5 +1,7 @@
-package Bulletin;
+package Bulletin.Home;
 
+import Bulletin.CalendarButton.CalendarButtonController;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
@@ -13,18 +15,22 @@ import org.json.simple.parser.JSONParser;
 
 import java.io.FileReader;
 
-//Controller class for HomePage.fxml
-public class HomePageController {
+//Controller class for Home.fxml
+public class HomeController {
 
-    //Declares variables for the outer anchorpane
+    //Declares variables for the outer AnchorPane
     // Also declares the right and left sides of scrollview that contains the calendar buttons
     public VBox leftSide;
+    public VBox middleSide;
     public VBox rightSide;
     public AnchorPane ap;
     public Button newButton;
+    public AnchorPane menuPane;
 
-    //This function is automatically called when HomePage.fxml gets loaded
+    //This function is automatically called when Home.fxml gets loaded
     public void initialize() throws Exception {
+
+        menuPane.toBack();
 
         //Creates a new JSONParser to parse json data
         JSONParser jsonParser = new JSONParser();
@@ -55,7 +61,7 @@ public class HomePageController {
                 loader = new FXMLLoader();
 
                 //A temporary button is loaded into tempButton variable from the CalendarButton.fxml file
-                tempButton = (Button) loader.load(getClass().getResource("CalendarButton.fxml").openStream());
+                tempButton = (Button) loader.load(getClass().getResource("../CalendarButton/CalendarButton.fxml").openStream());
 
                 //Stores the controller for this specific button in the tempController
                 tempController = loader.getController();
@@ -64,10 +70,12 @@ public class HomePageController {
                 tempController.fillData((String) buttonObj.get("name"), (String) buttonObj.get("image"));
 
                 //Determines if the button should be added to the left or right side of the window
-                if (count % 2 == 0) {
-                    rightSide.getChildren().add(tempButton);
-                } else {
+                if (count % 3 == 0) {
                     leftSide.getChildren().add(tempButton);
+                } else if (count % 3 == 1) {
+                    middleSide.getChildren().add(tempButton);
+                } else {
+                    rightSide.getChildren().add(tempButton);
                 }
                 count++;
             }
@@ -79,10 +87,29 @@ public class HomePageController {
     }
 
     public void newButtonClick() throws Exception {
-        Stage window  = (Stage) ap.getScene().getWindow();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("NewCalendarPage.fxml"));
+        Stage window = (Stage) ap.getScene().getWindow();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../NewCalendar/NewCalendar.fxml"));
         Parent root = loader.load();
 
-        window.setScene(new Scene(root));
+        window.setScene(new Scene(root, window.getWidth(), window.getHeight()));
+    }
+
+    public void openMenu() {
+        menuPane.toFront();
+        menuPane.setStyle("-fx-opacity: 1");
+    }
+
+    public void closeMenu() {
+        menuPane.toBack();
+        menuPane.setStyle("-fx-opacity: 0");
+    }
+
+    public void openProfile() throws Exception {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../Profile/Profile.fxml"));
+        Parent root = loader.load();
+        Stage window = (Stage) ap.getScene().getWindow();
+
+        Scene scene = new Scene(root, window.getWidth(), window.getHeight());
+        window.setScene(scene);
     }
 }

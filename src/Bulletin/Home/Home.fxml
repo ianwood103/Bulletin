@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@Home.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bulletin.Home.HomeController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <ScrollPane fitToWidth="true" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+              <content>
+                <AnchorPane>
+                     <children>
+                        <HBox layoutX="-1.0" layoutY="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <VBox fx:id="leftSide" alignment="TOP_CENTER" spacing="80.0" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets bottom="20.0" top="20.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox fx:id="middleSide" alignment="TOP_CENTER" spacing="80.0" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets bottom="20.0" top="20.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox fx:id="rightSide" alignment="TOP_CENTER" layoutX="10.0" layoutY="30.0" spacing="80.0" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets bottom="20.0" top="20.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </center>
+         <top>
+            <HBox id="menu-bar" alignment="CENTER" BorderPane.alignment="CENTER">
+               <children>
+                  <Button id="menu-button" graphicTextGap="0.0" mnemonicParsing="false" onAction="#openMenu" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0">
+                           <image>
+                              <Image url="@icon.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets top="-1.0" />
+                     </padding>
+                  </Button>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Button id="profile-button" mnemonicParsing="false" onAction="#openProfile" prefHeight="35.0" prefWidth="35.0">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+      <BorderPane AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="40.0">
+         <bottom>
+            <HBox nodeOrientation="RIGHT_TO_LEFT" BorderPane.alignment="CENTER">
+               <children>
+                  <Button id="new-button" fx:id="newButton" alignment="CENTER" contentDisplay="TEXT_ONLY" mnemonicParsing="false" onAction="#newButtonClick" prefHeight="50.0" prefWidth="50.0" text="+" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Button>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </HBox>
+         </bottom>
+      </BorderPane>
+      <AnchorPane id="menu-pane" fx:id="menuPane" maxWidth="300.0" minWidth="100.0" prefHeight="200.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button id="menu-button" graphicTextGap="0.0" mnemonicParsing="false" onAction="#closeMenu" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0">
+                     <image>
+                        <Image url="@icon.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets top="-1.0" />
+               </padding>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

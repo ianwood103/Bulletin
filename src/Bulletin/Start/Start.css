@@ -1,0 +1,55 @@
+.text-field {
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+    -fx-border-color: #4A7FE3;
+    -fx-border-width: 2px;
+}
+
+.password-field {
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+    -fx-border-color: #4A7FE3;
+    -fx-border-width: 2px;
+}
+
+.label {
+    -fx-text-fill: #707070;
+}
+
+.button {
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+    -fx-border-color: #4A7FE3;
+    -fx-border-width: 2px;
+    -fx-background-color: #4A7FE3;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+#background {
+    -fx-background-image: url("background.jpg");
+    -fx-background-size: 100% 100%;
+}
+
+#inner-box {
+    -fx-opacity: 0;
+}
+
+#middle-box {
+    -fx-opacity: 0;
+}
+
+.info-field {
+    -fx-pref-height: 40;
+    -fx-max-width: 250;
+}
+
+#exit-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-cursor: pointer;
+}
+
+#exit-pane {
+    -fx-opacity: 0;
+}
