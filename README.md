@@ -1,6 +1,8 @@
 
 # Bulletin
 
+![Bulletin Logo](https://github.com/ianwood103/Bulletin/images/image.jpg?raw=true)
+
 ## Overview:
 Bulletin is a collaborative calendar app that allows users to add multiple people to the same calendar to allow for easy coordination of events between groups of people.
 
